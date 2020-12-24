@@ -1,9 +1,0 @@
-package multiThreading;
-
-public class MultiThreadingUsingLamdaExpressions {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

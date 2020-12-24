@@ -1,9 +1,0 @@
-package multiThreading;
-
-public class ThreadDemo {
-
-	public static void main(String[] args) {
-		// By default we have the main Thread
-	}
-
-}
