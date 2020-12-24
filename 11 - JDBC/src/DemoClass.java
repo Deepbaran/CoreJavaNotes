@@ -3,7 +3,7 @@
 
 /*
  * 1. import ---> java.sql
- * 2. load and register the driver ---> com.mysql.jdbc.Driver
+ * 2. load and register the driver ---> com.mysql.cj.jdbc.Driver
  * 3. Create connection ---> Connection
  * 4. Create a statement ---> Statement
  * 5. execute the query
@@ -18,7 +18,7 @@ public class DemoClass {
 	public static void main(String[] args) throws Exception {
 		String url = "jdbc:mysql://localhost:3306/jdbctest";
 		String uname = "root";
-		String pass = "Deepbaran1997@gmail.kar";
+		String pass = "update the password according to your database";
 		
 		// DDL, DML, DQL, TCL
 		// DDL: Data Definition Language. Changing the structure of the Table
