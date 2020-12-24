@@ -38,7 +38,7 @@ public class DemoClass {
 		ResultSet rs = st.executeQuery(query2); // executeQuery returns an object of ResultSet
 		*/
 		
-		PreparedStatement st = con.prepareStatement(query4);
+		PreparedStatement st = con.preparedStatement(query4);
 		st.setInt(1, 5); // inserted value for the first ? in query4
 		st.setString(2, "Gopal"); // inserted value for the second ? in query4
 		
