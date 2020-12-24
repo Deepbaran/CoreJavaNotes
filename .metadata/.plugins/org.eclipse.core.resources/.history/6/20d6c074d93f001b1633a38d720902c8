@@ -1,0 +1,9 @@
+package multiThreading;
+
+public class SynchronizedKeyword {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

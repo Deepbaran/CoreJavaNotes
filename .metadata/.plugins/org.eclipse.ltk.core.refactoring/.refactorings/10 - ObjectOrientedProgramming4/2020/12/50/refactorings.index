@@ -1,0 +1,21 @@
+1607363838023	Rename package 'JDBC'
+1607363844620	Rename package 'FileProcessingAndExceptionHandling'
+1607363851169	Rename package 'Concurrency'
+1607363857929	Rename package 'CollectionsFramework'
+1607402188524	Move file
+1607402344386	Rename package 'fileProcessingAndExceptionHandling'
+1607409389603	Rename type 'FooRubTimeException'
+1607409409416	Rename type 'FooRunTimeException'
+1607409718546	Delete element
+1607419503223	Delete element
+1607419507031	Delete element
+1607424782739	Delete element
+1607452853675	Rename package 'concurrency'
+1607452927604	Rename package 'collection2'
+1607452969385	Rename package 'lambdaExpressionsAndStreamsAPI'
+1607453001317	Rename package 'collections1'
+1607453017608	Rename package 'collections2'
+1607453030498	Rename package 'ExtraTips'
+1607488734207	Rename package 'concurrency0'
+1607488745738	Delete elements
+1607488766564	Rename package 'functionalProgramming'

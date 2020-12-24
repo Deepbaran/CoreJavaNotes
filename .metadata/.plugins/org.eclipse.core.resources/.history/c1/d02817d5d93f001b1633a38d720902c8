@@ -1,0 +1,28 @@
+package multiThreading;
+
+class Counter {
+	int count;
+	
+	public void increment() {
+		count++;
+	}
+}
+
+public class SynchronizedKeyword {
+
+	public static void main(String[] args) {
+		Counter c = new Counter();
+		
+		Thread t1 = new Thread(
+				() -> {
+					
+				}
+				);
+		
+		c.increment();
+		c.increment();
+		
+		System.out.println("Count " + c.count);
+	}
+
+}

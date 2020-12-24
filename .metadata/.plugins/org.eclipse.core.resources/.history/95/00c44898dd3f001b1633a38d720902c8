@@ -1,0 +1,37 @@
+package multiThreading;
+
+class A {
+	int num;
+	
+	public void setNum(int num) {
+		this.num = num;
+	}
+	
+	public int getName() {
+		return num;
+	}
+}
+
+class Producer implements Runnable {
+	
+	A a;
+	
+	Producer(A a) {
+		this.a = a;
+	}
+	
+	public void run() {
+		int i = 0;
+		while(true) {
+			a.setNum(i++);
+		}
+	}
+}
+
+public class InterThreadCommunication {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
