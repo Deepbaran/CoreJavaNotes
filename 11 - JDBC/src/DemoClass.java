@@ -17,8 +17,8 @@ public class DemoClass {
 
 	public static void main(String[] args) throws Exception {
 		String url = "jdbc:mysql://localhost:3306/jdbctest";
-		String uname = "root";
-		String pass = "update the password according to your database";
+		String uname = "Deepbaran1";
+		String pass = "password";
 		
 		// DDL, DML, DQL, TCL
 		// DDL: Data Definition Language. Changing the structure of the Table
@@ -38,7 +38,7 @@ public class DemoClass {
 		ResultSet rs = st.executeQuery(query2); // executeQuery returns an object of ResultSet
 		*/
 		
-		PreparedStatement st = con.preparedStatement(query4);
+		PreparedStatement st = con.prepareStatement(query4);
 		st.setInt(1, 5); // inserted value for the first ? in query4
 		st.setString(2, "Gopal"); // inserted value for the second ? in query4
 		
