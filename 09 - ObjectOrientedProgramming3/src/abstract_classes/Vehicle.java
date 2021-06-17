@@ -42,6 +42,7 @@ public abstract class Vehicle {
 /*
  * we cannot override a final method
  * we can not extend a final class
+ * final class prevents inheritance
 */
 
 /*

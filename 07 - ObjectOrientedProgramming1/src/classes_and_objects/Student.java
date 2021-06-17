@@ -55,7 +55,7 @@ public class Student {
  * *****************************************************************************************************************************
  * The Object class is the parent class of all the classes in java by default. In other words, it is the topmost class of java.
  * 
- * reference variables are stored in the heap memory and the privitive data types are stored in the stak memory.
+ * reference variables are stored in the heap memory and the primitive data types are stored in the stack memory.
  * new keyword is used to access the heap memory and also to create reference variables.
  * *****************************************************************************************************************************
  * data members of class are generally default/friendly(if nothing is written).
@@ -89,6 +89,7 @@ public class Student {
  * We can initialize a final data member in two places, one is at the time of creation or in a constructor
  * And Java forces us to use initialize a final data member in the constructor if not initialized at the time of creation
  * Every constructor must initialize the final data members
+ * Any class that is final, can not be inherited.
  * 
  * ********************************************************************************************************************************
  * this -> this is the object that we are constructing. 
@@ -117,6 +118,13 @@ public class Student {
  * We can access static function through the objects but we should not.
  * static keyword is bound to the class and not to an individual object, thus we can’t make constructors static.
  * 
+ * Instance method vs Static method
+ * 1. Instance method can access the instance methods and instance variables directly.
+ * 2. Instance method can access static variables and static methods directly.
+ * 3. Static methods can access the static variables and static methods directly.
+ * 4. Static methods can’t access instance methods and instance variables directly. They must use reference to object. 
+ * And static method can’t use this keyword as there is no instance for ‘this’ to refer to.
+ * 
  * *********************************************************************************************************************************
  * 
  * The java instanceof operator is used to test whether the object is an instance of the specified type (class or subclass or interface).
@@ -139,7 +147,7 @@ public class Student {
 /*
 
 By default Java puts 0 to it's uninitialized int member, 0.0 to uninitialized double variables
-and stores null to uninitialized objects.
+and stores null to uninitialized objects in a field of a class or if it is declared in heap memory.
 
 By putting Getters and Setters and not letting the user directly access the member variables, we can restrict user from adding invalid values to member variables
 and we can also add logic.
@@ -220,3 +228,34 @@ Planet venus = new Planet();
 So, the behavior of a class are actions that can be performed on its objects.
 
 */
+
+/*
+WRAPPER CLASSES:
+A Wrapper class is a class whose object wraps or contains primitive data types. When we create an object to a wrapper class, it contains a field and in this field, we can store primitive data types. 
+In other words, we can wrap a primitive value into a wrapper class object.
+
+Need of wrapper classes:
+1. They convert primitive data types into objects. Objects are needed if we wish to modify the arguments passed into a method (because primitive types are passed by value).
+2. The classes in java.util package handles only objects and hence wrapper classes help in this case also.
+3. Data structures in the Collection framework, such as ArrayList and Vector, store only objects (reference types) and not primitive types.
+4. An object is needed to support synchronization in multithreading.
+
+Autoboxing: Automatic conversion of primitive types to the object of their corresponding wrapper classes is known as autoboxing. 
+For example – conversion of int to Integer, long to Long, double to Double etc.
+
+Unboxing: It is just the reverse process of autoboxing. Automatically converting an object of a wrapper class to its corresponding primitive type is known as unboxing. 
+For example – conversion of Integer to int, Long to long, Double to double, etc.
+ */
+
+/*
+The class written written within is called the nested class, and the class that holds the inner class is called the outer class.
+
+class Outer_Demo {
+	class Inner_Demo {
+	}
+}
+
+Inner classes are a security mechanism in Java. We know a class cannot be associated with the access modifier private, but if we have the class as a member of other class, 
+then the inner class can be made private. And this is also used to access the private members of a class.
+
+ */

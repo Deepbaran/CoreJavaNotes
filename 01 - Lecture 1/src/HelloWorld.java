@@ -26,13 +26,13 @@ int a = 100; means that the value 100 is stored in a memory location referenced 
 Primitive Data Types:
 
 Integer:
-1. byte -> 8 bits -> -2^8 to (2^8)-1 OR -128 to 127
-2. short -> 16 bits -> -2^16 to (2^16)-1 OR -32,768 to 32,767
-3. int -> 16 bits -> -2^32 to (2^32)-1 OR -2,147,483,648 to 2,147,483,647
-4. long -> 16 bits -> -2^64 to (2^64)-1
+1. byte -> 8 bits -> -2^7 to (2^7)-1 OR -128 to 127
+2. short -> 16 bits -> -2^15 to (2^15)-1 OR -32,768 to 32,767
+3. int -> 16 bits -> -2^31 to (2^31)-1 OR -2,147,483,648 to 2,147,483,647
+4. long -> 16 bits -> -2^63 to (2^63)-1
 
 Floating Point:
-1. float -> 32 bits. float f = 4.0f; floating point constant or literal is y default a double. That's why we use f at the eld of floating value literal.
+1. float -> 32 bits. float f = 4.0f; floating point constant or literal is y default a double. That's why we use f at the end of floating value literal.
 2. double -> 64 bits
 
 Character:

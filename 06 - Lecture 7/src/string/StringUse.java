@@ -37,13 +37,13 @@ public class StringUse {
 //		 * str.charAt(1) = 'f'; This statement is invalid. 'b' will not become 'f'
 //		 * 
 //		 * There is a concept in java called String Pool
-//		 * Whenever we create a new String / character array, the String variable firse searches if the string is already available in the String Pool
+//		 * Whenever we create a new String / character array, the String variable first searches if the string is already available in the String Pool
 //		 * If it is present then the String variable refers to that string rather than creating a new string
 //		 * If it is not present, then a new string is created in the  String Pool and the String variable then refers to it
 //		 * 
 //		 * In the above case "abc" is already created in the String Pool by the time s is trying to refer to it
 //		 * So, now as "abc" is present in the String Pool, so, s will refer to it rather than creating a new String
-//		 * So, both str and s are referring to the same String in the Strig Pool
+//		 * So, both str and s are referring to the same String in the String Pool
 //		 * Now, if Strings were not immutable in java and we could change any character in the string as we deemed necessary
 //		 * then for a change made for str will also change s. Which is something we do not want.
 //		 * That is the reason why Strings are immutable in java

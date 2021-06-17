@@ -52,3 +52,5 @@ public class Car extends Vehicle { // Car extending Vehicle. Class car is inheri
  * Object() class is the super class of all classes in Java
  *
  */
+
+// private and protected modifiers are not allowed in front of class that is not a nested or inner class.
