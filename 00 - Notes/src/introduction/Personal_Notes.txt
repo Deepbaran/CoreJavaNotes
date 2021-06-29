@@ -1,4 +1,12 @@
 ++++++++++++++
+JAVA:
+++++++++++++++
+-----------
+Concrete Class:
+-----------
+- A Concrete Class is a class that has implementation of all the methods of another Super class/Interface. Then the implementing class is called the Concrete Class of the implemented Class/Interface.
+
+++++++++++++++
 STREAM API:
 ++++++++++++++
 - These streams are related to Collection Frameworks / (group of objects). These streams are very different from io stream, io streams are the sequence of data.
@@ -33,8 +41,28 @@ STREAM API:
 
 - sorted(): Sorts the stream elements. We can pass a comparator to get a customized sorted stream.
 
+++++++++++++++++++++++++++++++
+Collection Framework:
+++++++++++++++++++++++++++++++
+--------------------------
+Comparator VS Comparable:
+--------------------------
+1. Comparable provides a single sorting sequence. In other words, we can sort the collection on the basis of a single element such as id, name, and price.
+	On the other hand, the Comparator provides multiple sorting sequences. In other words, we can sort the collection on the basis of multiple elements such as id, name, and price etc.
+	
+2. Comparable affects the original class, i.e., the actual class is modified.
+	On the other hand Comparator doesn't affect the original class, i.e., the actual class is not modified.
+	
+3. Comparable provides compareTo() method to sort elements.
+	On the other hand, Comparator provides compare() method to sort elements.
+	
+4. Comparable is present in java.lang package.
+	On the other hand, a Comparator is present in the java.util package.
+	
+5. We can sort the list elements of Comparable type by Collections.sort(List) method.
+	On the other hand, we can sort the list elements of Comparator type by Collections.sort(List, Comparator) method.
 
-
++++++++++++++++++++++++++++++++
 
 
 
